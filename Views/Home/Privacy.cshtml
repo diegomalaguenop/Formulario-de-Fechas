@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de Fecha</title>
+</head>
+<body>
+    @if (ViewData["ErrorMessage"] != null)
+    {
+        <div class="error">
+            @ViewData["ErrorMessage"]
+        </div>
+    }
+
+    <form method="post">
+        <label for="DateField">Fecha:</label>
+        <input type="datetime-local" id="DateField" name="DateField" required>
+        
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
